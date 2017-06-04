@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private int selectedZombiePosition=0;
-    private int score = 0;
     public Text scoreText;
+    private int score = 0;
     public GameObject selectedZombie;
     public List<GameObject> zombies;
     public Vector3 selectedSize;
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start () {
         SelectZombie(selectedZombie);
-        scoreText.text = "Score:" + score;
+        scoreText.text = "Score: " + score;
 	}
 	
 	// Update is called once per frame
@@ -82,6 +82,6 @@ public class GameManager : MonoBehaviour
     public void AddPoint()
     {
         score = score + 1;
-        scoreText.text = "Score:" + score;
+        scoreText.text = "Score: " + score;
     }
 }
