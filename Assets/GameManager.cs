@@ -79,4 +79,9 @@ public class GameManager : MonoBehaviour
         Rigidbody rb = selectedZombie.GetComponent<Rigidbody>();
         rb.AddForce(0, 0, 10, ForceMode.Impulse);
     }
+    public void AddPoint()
+    {
+        score = score + 1;
+        scoreText.text = "Score:" + score;
+    }
 }
