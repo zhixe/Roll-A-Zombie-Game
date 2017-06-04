@@ -13,11 +13,11 @@ public class Tile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-#pragma warning disable CS0168 // Variable is declared but never used
-        void OnTriggerEnter(Collider other)
-#pragma warning restore CS0168 // Variable is declared but never used
-        {
-            gameManager.AddPoint();
-        }
+
 	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        gameManager.AddPoint();
+    }
 }
