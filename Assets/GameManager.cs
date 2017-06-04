@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
     void PushUp()
     {
         Rigidbody rb = selectedZombie.GetComponent<Rigidbody>();
-        rb.AddForce(0, 0, 4, ForceMode.Impulse);
+        rb.AddForce(0, 0, 8, ForceMode.Impulse);
     }
     public void AddPoint()
     {
